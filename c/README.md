@@ -9,7 +9,7 @@ Write a recursive C program called recurse.c that computes f(N), where N is an i
 ## Golf
 Write a C program called golf.c to rank golfers based on their relationship to par. The program will take a file as an input (eg., “./golf golferstats.txt”). The format of this file is as follows:
 
-The file starts with an integer that is “par”. The rest is a series of per-golfer stats, where each entry is 2 lines long. The first line is the golfer’s last name, the second line is how many shots the golfer took. After the last golfer in the list, the last line of the file is the string “DONE”. For example:
+The file starts with an integer that is “par”. The rest is a series of per-golfer stats, where each entry is 2 lines long. The first line is the golfer’s last name, the second line is how many shots the golfer took. After the last golfer in the list, the last line of the file is the string “DONE”. For example: <br />
 70<br />
 Woods<br />
 68<br />
@@ -22,7 +22,7 @@ DONE
 The program outputs a number of lines equal to the number of players, and each line is the golfer’s name and their relationship to par, which is computed as: (shots taken by golfer) – (par).
 If the result is positive, you must put a plus sign (+) before the metric. (Note that 0 is neither positive nor negative).
 
-The lines should be sorted in ascending order based on this metric, and you must write your own sorting function. Golfers with equal metrics should be sorted alphabetically (e.g., based on the `strcmp` function). For example:
+The lines should be sorted in ascending order based on this metric, and you must write your own sorting function. Golfers with equal metrics should be sorted alphabetically (e.g., based on the `strcmp` function). For example: <br />
 Wie -5<br />
 Woods -2<br />
 Scrub +3<br />
