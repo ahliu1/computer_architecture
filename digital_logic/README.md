@@ -20,14 +20,14 @@ Write a sum-of-products Boolean function for the output (out) in the following t
 
 
 ## Adder/Subtractor Design
-Use Logisim Evolution to build and test a 16-bit ripple-carry adder/subtractor. You must first create a 1-bit full adder that you then use as a module in the 16-bit adder. The unit should perform A+B if the sub input is zero, or A-B if the sub input is 1. The circuit should also output an overflow signal (ovf) indicating if there was a signed overflow.
+Use Logisim Evolution to build and test a 16-bit ripple-carry adder/subtractor. You must first create a 1-bit full adder that you then use as a module in the 16-bit adder. The unit should perform A+B if the sub input is zero, or A-B if the sub input is 1. The circuit should also output an overflow signal (ovf) indicating if there was a signed overflow. Implement this in Logism Evolution `my_adder.circ`. 
 
 ## Finite State Machine
 You’re an engineer at a robotics company that works with industrial robot arms, and you have been tasked to produce a finite state machine to control the arm. The arm moves left and right within a certain range of 4 positions. It starts at the far left at position 0, and it can go as far right as position 3. If you try to move the robot left from position 0, it just stays at position 0. Similarly, if you try to move the robot right from position 3, it just stays at position 3. </br >
 
 At the start, the robot is not moving. The robot has a speed input that specifies how many positions the robot moves in one cycle. The robot starts at speed 0 (but is not moving, so this is the speed it will use by default once it starts moving, unless the speed is changed). You have two inputs: one enables you to choose between moving left and right, and the other enables you to control the speed. You have two outputs: the position of the robot and a signal to denote whether the robot was unable to move due to already being at the farthest position. </br >
 
-The formal names you must use in your circuit are shown below. Please implement this circuit in Logism Evolution.  </br >
+The formal names you must use in your circuit are shown below. Please implement this circuit in Logism Evolution `robot.circ`.   </br >
 
 | Pin name       | Type        | Meaning                                                                                                                                                                                                                     |
 |----------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

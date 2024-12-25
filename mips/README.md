@@ -3,13 +3,13 @@
 Calling conventions were followed for all programs.
 
 ## Sequence
-Write a MIPS program called sequence.s that prints out the Nth number of a sequence (specified below), where N is an integer that is input to the program on the command line. Each number in the sequence, S_N , is defined as S_N = 3^N – 3. The input value of N will be greater than or equal to zero. Your program should prompt the user for the value of N via the console and receive input from the user via the console using syscalls.
+Write a MIPS program called `sequence.s` that prints out the Nth number of a sequence (specified below), where N is an integer that is input to the program on the command line. Each number in the sequence, S_N , is defined as S_N = 3^N – 3. The input value of N will be greater than or equal to zero. Your program should prompt the user for the value of N via the console and receive input from the user via the console using syscalls.
 
 ## Recurse
-Write a recursive MIPS program called recurse.s that computes f(N), where N is an integer greater than or equal to zero that is input to the program. f(N) = 2*(N+1) + 3*f(N-1) - 17. The base case is f(0)=2. Your code must be recursive, and it must follow proper MIPS calling conventions. Your program should prompt the user for the value of N via the console and receive input from the user via the console using syscalls.
+Write a recursive MIPS program called `recurse.s` that computes f(N), where N is an integer greater than or equal to zero that is input to the program. f(N) = 2*(N+1) + 3*f(N-1) - 17. The base case is f(0)=2. Your code must be recursive, and it must follow proper MIPS calling conventions. Your program should prompt the user for the value of N via the console and receive input from the user via the console using syscalls.
 
 ## Golf
-This homework involves writing a MIPS assembly program called golf.s to process golfer statistics. The program reads input from the console, storing golfer names and their shot counts in a linked list. The input consists of an integer (par value), followed by pairs of golfer data: a name (string) and the number of shots taken (integer). The input ends with the string "DONE".
+This homework involves writing a MIPS assembly program called `golf.s` to process golfer statistics. The program reads input from the console, storing golfer names and their shot counts in a linked list. The input consists of an integer (par value), followed by pairs of golfer data: a name (string) and the number of shots taken (integer). The input ends with the string "DONE".
 
 ### Requirements:
 #### Input Handling:
