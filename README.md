@@ -78,6 +78,29 @@ Repository containing projects from CS/ECE 250: Computer Architecture with Prof.
   - Pulse the reset input and use the clock to execute instructions.
  
   ---
+  
+# Homework 7: Cache
 
-  ## Duke Community Standard
-  Intellectual and academic honesty are at the heart of the academic life of any university. It is the responsibility of all students to understand and abide by Duke's expectations regarding academic work. Students found guilty of plagiarism, lying, cheating or other forms of academic dishonesty may be suspended.
+Implementation of `cachesim`, a simulator for a single-level cache and the memory underneath it using Java. The simulator supports a configurable cache size, associativity, block size, and FIFO replacement policy.
+
+## Features
+- **Configurable Cache Parameters:** Supports up to 2MB cache size, associativity ranging from direct-mapped to fully associative, and block sizes from 2 to 1024 bytes.
+- **FIFO Replacement Policy:** Ensures the first block brought into a set is the first evicted.
+- **Write-back and Write-allocate Policies:** Tracks dirty bits for write-back operations.
+- **Memory Representation:** Simulates 16MB of main memory initialized to zero.
+- **24-bit Addressing:** Addresses up to \(2^{24} - 1\) (16MB).
+
+## Program Arguments
+1. **`<trace-file>`**: File containing the memory access trace.
+2. **`<cache-size-kB>`**: Cache capacity in kilobytes (e.g., 1024 for 1MB).
+3. **`<associativity>`**: Set associativity (e.g., 1 for direct-mapped, 4 for 4-way).
+4. **`<block-size>`**: Size of cache blocks in bytes (e.g., 32, 64).
+
+## Example Command
+```bash
+./cachesim tracefile 1024 4 32
+
+  ---
+
+## Duke Community Standard
+Intellectual and academic honesty are at the heart of the academic life of any university. It is the responsibility of all students to understand and abide by Duke's expectations regarding academic work. Students found guilty of plagiarism, lying, cheating or other forms of academic dishonesty may be suspended.
