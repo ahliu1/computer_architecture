@@ -28,4 +28,4 @@ The program accepts the following arguments:
 
 ### Example Command:
 ```bash
-./cachesim tracefile 1024 4 32
+java cachesim traces/example.txt 16 1 8
