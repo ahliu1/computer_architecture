@@ -100,4 +100,4 @@ Implementation of `cachesim`, a simulator for a single-level cache and the memor
 
 ### Example Command
 ```bash
-./cachesim tracefile 1024 4 32
+java cachesim traces/example.txt 16 1 8
